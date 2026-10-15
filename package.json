@@ -1,0 +1,29 @@
+{
+  "name": "tacticore",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "python scripts/local_api.py",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "import:statsbomb": "python scripts/import_statsbomb.py",
+    "import:wyscout": "python scripts/import_wyscout.py",
+    "import:wyscout:all": "python scripts/import_wyscout.py --all",
+    "import:results-archive": "python scripts/import_results_archive.py",
+    "test:importer": "python -m unittest discover -s scripts -p test_*.py",
+    "test:simulation": "deno test scripts/test_simulation.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  }
+}

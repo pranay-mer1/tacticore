@@ -174,3 +174,5 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
+#   t a c t i c o r e  
+ 
